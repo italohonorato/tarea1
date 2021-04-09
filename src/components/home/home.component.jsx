@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import logo from "../../logo.svg";
 import Card from '../../../node_modules/react-bootstrap/Card';
 import Button from '../../../node_modules/react-bootstrap/Button';
@@ -14,7 +14,9 @@ class Home extends Component {
                     <Card.Body>
                         <Card.Title>Tarea Nº 1 React Js Gen 6</Card.Title>
                         <Card.Text>
-                            <Task />
+                            <Fragment>
+                                <Task />
+                            </Fragment>
                         </Card.Text>
                     </Card.Body>
                 </Card>

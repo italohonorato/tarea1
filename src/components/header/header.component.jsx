@@ -5,6 +5,7 @@ import Button from '../../../node_modules/react-bootstrap/Button';
 import Form from '../../../node_modules/react-bootstrap/Form';
 import './header.styles.scss';
 import { auth } from "../../firebase/firebase";
+import { withRouter } from "react-router-dom";
 
 class Header extends Component {
 
@@ -48,4 +49,4 @@ class Header extends Component {
     }
 }
 
-export default Header;
+export default withRouter(Header);
